@@ -8,10 +8,28 @@
   --page-white: #fdfdfd;
   
   --page-navy: #00006f;
+  --page-navy-brighter: #0000B8;
+  
+  --header-maxsize: 4rem; /*Set size of header to allow anchors to give extra space for it*/
 }
 
 .bg-dark {
 	background-color: var(--page-navy)!important;
+}
+
+#headerLogoSVG {
+	max-height: var(--header-maxsize);
+}
+
+main {
+	padding-top: calc(var(--header-maxsize) / 3);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: calc(0rem - var(--header-maxsize) - 1rem);
+    visibility: hidden;
 }
 
 body {
