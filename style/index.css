@@ -6,6 +6,16 @@
   /* old colors: linear-gradient(to top, #5B3ADC 0%, #305AED 100%) */
   --page-orange: #ff7a00;
   --page-white: #fdfdfd;
+  
+  --page-navy: #00006f;
+}
+
+.bg-dark {
+	background-color: var(--page-navy)!important;
+}
+
+body {
+	color: var(--page-navy)!important;
 }
 
 .patternbackground {
